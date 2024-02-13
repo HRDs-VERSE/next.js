@@ -9,7 +9,6 @@ export const GET = async (req) => {
     try {
         
         const UserId = await getDataFromToken(req)
-        console.log(UserId)
 
         const user = await User.findById(UserId).select("-password")
 
