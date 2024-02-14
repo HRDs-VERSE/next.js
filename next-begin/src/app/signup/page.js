@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 import axios  from "axios"
 import toast from "react-hot-toast"
 
-const signup = () => {
+const Signup = () => {
   const router = useRouter()
 
   const [user, setUser] = useState({
@@ -85,4 +85,4 @@ const signup = () => {
   )
 }
 
-export default signup
+export default Signup
